@@ -1,0 +1,5 @@
+node_modules
+emails/*
+!emails/index.mjml
+src/mailjet/settings.js
+index.html
