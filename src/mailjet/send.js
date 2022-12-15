@@ -2,7 +2,7 @@ const fs = require('fs');
 const { join } = require('path');
 const Mailjet = require('node-mailjet');
 
-const { api, from, subject, to } = require('./settings');
+const { api, from, subject, to } = require('../settings');
 
 const mailjet = new Mailjet({
   apiKey: api.key,
