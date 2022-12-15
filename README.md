@@ -15,9 +15,13 @@ Then, to send the emails, from the command line, you can run:
 
 ### With Ethereal
 
-With Ethereal, there is no need to create and account, node-mailer will create
-a temporal one for you. To send emails, you just need to run
-`npm run send:nodemailer`
+Create an account at <https://ethereal.email/create> and place the provided
+configuration under ethereal in you settings file. Then, to send emails, you
+just need to run `npm run send:nodemailer`
+
+ ‼️ Remember that if sending messages through Ethereal SMTP then no message is
+ actually delivered, all messages are caught and you can see these in the
+ Messages page or by using your favorite IMAP/POP3 client.
 
 ## MJML live editors
 

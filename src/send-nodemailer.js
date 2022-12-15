@@ -1,26 +1,20 @@
 const nodemailer = require('nodemailer');
-const { from, subject, to } = require('./settings');
+const { ethereal, from, subject, to } = require('./settings');
 const fs = require('fs');
 const { join } = require('path');
 
 async function main() {
   try {
-    // Generate test SMTP service account from ethereal.email
-    // Only needed if you don't have a real mail account for testing
-    let testAccount = await nodemailer.createTestAccount();
-
-    // create reusable transporter object using the default SMTP transport
     let transporter = nodemailer.createTransport({
-      host: testAccount.smtp.host,
-      port: testAccount.smtp.port,
-      secure: testAccount.smtp.secure,
+      host: ethereal.host,
+      port: ethereal.port,
+      secure: ethereal.secure,
       auth: {
-        user: testAccount.user,
-        pass: testAccount.pass,
+        user: ethereal.auth.user,
+        pass: ethereal.auth.pass,
       },
     });
 
-    // send mail with defined transport object
     let info = await transporter.sendMail({
       from: `${from.name}  <${from.email}>`,
       to: to

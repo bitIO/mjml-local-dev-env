@@ -5,6 +5,14 @@ module.exports = {
       secret: '5f83*******',
     },
   },
+  ethereal: {
+    host: 'smtp.ethereal.email',
+    port: 587,
+    auth: {
+      user: 'alfred.marks76@ethereal.email',
+      pass: 'GmHGFpZVMdjChr94E5',
+    },
+  },
   from: {
     email: 'your.gmail.user@gmail.com',
     name: 'your name',
