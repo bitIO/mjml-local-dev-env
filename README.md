@@ -44,3 +44,7 @@ just need to run `npm run send:nodemailer`
 ## Node packages references
 
 * <https://www.npmjs.com/package/live-server>
+
+---
+
+Made with ❤️ for Sandra
