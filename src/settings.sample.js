@@ -1,7 +1,9 @@
 module.exports = {
-  api: {
-    key: '63e0*******',
-    secret: '5f83*******',
+  mailjet: {
+    api: {
+      key: '63e0*******',
+      secret: '5f83*******',
+    },
   },
   from: {
     email: 'your.gmail.user@gmail.com',
