@@ -7,6 +7,7 @@
     "prebuild": "rimraf index.html",
     "build": "mjml --watch email/index.mjml -o index.html",
     "send:mailjet": "node src/mailjet/send.js",
+    "send:nodemailer": "node src/send-nodemailer.js",
     "server:preview": "node src/preview-server.js"
   },
   "keywords": [],
